@@ -1,4 +1,8 @@
-
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
 
 \documentclass[letterpaper,11pt]{article}
 
@@ -9,16 +13,8 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\usepackage{fontawesome5}
-\usepackage{multicol}
-\setlength{\multicolsep}{-3.0pt}
-\setlength{\columnsep}{-1pt}
-\input{glyphtounicode}
-
 
 
 \pagestyle{fancy}
@@ -28,11 +24,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.6in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.19in}
-\addtolength{\topmargin}{-.7in}
-\addtolength{\textheight}{1.4in}
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
 
@@ -42,180 +38,120 @@
 
 % Sections formatting
 \titleformat{\section}{
-	\vspace{-4pt}\scshape\raggedright\large\bfseries
+	\vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[1]{
+\newcommand{\resumeItem}[2]{
 	\item\small{
-		{#1 \vspace{-2pt}}
-	}
-}
-
-\newcommand{\classesList}[4]{
-	\item\small{
-		{#1 #2 #3 #4 \vspace{-2pt}}
+		\textbf{#1}{ #2 \vspace{-2pt}}
 	}
 }
 
 \newcommand{\resumeSubheading}[4]{
-	\vspace{-2pt}\item
-	\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-		\textbf{#1} & \textbf{\small #2} \\
-		\textit{\small#3} & \textit{\small #4} \\
-	\end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-	\item
+	\vspace{-1pt}\item
 	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-		\textit{\small#1} & \textit{\small #2} \\
-	\end{tabular*}\vspace{-7pt}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeProjectHeading}[2]{
-	\item
-	\begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-		\small#1 & \textbf{\small #2}\\
-	\end{tabular*}\vspace{-7pt}
-}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
 
-\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
 	
-	
-	\begin{center}
-		{\Huge \scshape Sebastian G\u albini\c t\u a } \\ \vspace{1pt}
-		12 Street Prieteniei, Bac\u au, Bac\u au \\ \vspace{1pt}
-		\small \raisebox{-0.1\height}\faPhone\ 0740918796 ~ \href{mailto:sebastian.galbinita97@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{sebastian.galbinita97@gmail.com}} ~ 
-		\href{https://linkedin.com/in/galbinita-sebastian}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com}}  ~
-		\href{https://github.com/GalbinitaSebastian97}{\raisebox{-0.2\height}\faGithub\ \underline{github.com}}
-		\vspace{-8pt}
-	\end{center}
+	%----------HEADING-----------------
+	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{\href{https://www.linkedin.com/in/sebastian-galbinita-b029241a3}{\huge G\u albini\c t\u a Sebastian}} & Email : \href{mailto:sebastian.galbinita97@gmail.com}{sebastian.galbinita97@gmail.com}\\
+		\textbf{} & Mobile : 0740918796 \\
+		\textbf{} & Location : Ia\c si \\
+		\textbf{} & GitHub : \href{https://github.com/GalbinitaSebastian97/PersonalDevelopment}{github.com/GalbinitaSebastian97} \\
+	\end{tabular*}
 	
 	
-	%-----------EDUCATION-----------
-	\section{Education}
-	\resumeSubHeadingListStart
-	\resumeSubheading
-	{\href{https://github.com/GalbinitaSebastian97/CV-LaTeX-/tree/main/Acts/Faculty}{„Alexandru Ioan Cuza” University of Ia\c si}}{Sep. 2017 -- Sep. 2020}
-	{Bachelor degree in Mathematics with a specialization in Mathematics and Computer Science.}{Ia\c si, Ia\c si}
-	\begin{itemize}[itemsep=-5pt, parsep=6pt]
-		\item\small My scientific paper is entitled as \href{https://github.com/GalbinitaSebastian97/Licenta-2017-2020/blob/master/Licenta/licentaa.pdf}{"Algorithms for graphs and applications"}. 	
-	\end{itemize}
-	\resumeSubheading
-	{„Gheorghe Vr\u anceanu” National College of Bac\u au}{Sep. 2013 -- July 2017}
-	{High school diploma with a specialization in Mathematics and Computer Science.}{Bac\u au, Bac\u au}
-	\resumeSubHeadingListEnd
-	
-	%------RELEVANT COURSEWORK-------
-	\section{Relevant Coursework}
-	%\resumeSubHeadingListStart
-	\begin{multicols}{3}
-		\begin{itemize}[itemsep=-5pt, parsep=6pt]
-			\item\small Data Structures
-			\item Algorithms Analysis
-			\item Database Management
-			\item Advanced Programming Techniques
-			\item API
-			\item MVC
-
-		\end{itemize}
-	\end{multicols}
-	\vspace*{2.0\multicolsep}
-	%\resumeSubHeadingListEnd
-	
-	
-	%-----------EXPERIENCE-----------
+	%-----------EXPERIENCE-----------------
 	\section{Experience}
 	\resumeSubHeadingListStart
 	
 	\resumeSubheading
-	{Continental}{November 2019 -- December 2019}
-	{Junior Programmer}{Ia\c si, Ia\c si}
+	{Aumovio}{Ia\c si}
+	{Software Development Engineer - Automotive Embedded(Application Layer, AUTOSAR Classic)}{February 2022 - Present}
 	\resumeItemListStart
-	\resumeItem{For this internship my task was to create a project with a GUI interface in Raspberry using Python. The tasks that I had to implement varied from changing the lights of the vehicle to the client's preferences to having a login system and sending encrypted codes to the server. The assets that I have learned during my internship:}
-	\subitem{ - Weekly meetings that we discussed the tasks that we finished which helped me improve my programming and communication skills.}
-	\subitem{ - Had the opportunity to develop my first python project that greatly contributed on how to think a program should be constructed. }
+	\resumeItem{Developed}
+	{and owned embedded software for exterior mirror and window lifter control systems, implementing feature logic, state machines, diagnostics, and safety-related behavior from requirements analysis through ECU integration and release.}
+	\resumeItem{Designed}
+	{parameterizable embedded libraries and AUTOSAR Software Component(SWCs), enabling reuse across multiple ECU specifications and vehicle platforms with different hardware constraints.}
+	\resumeItem{Performed}
+	{system-level debugging and verification using \textbf{CANoe} and \textbf{winIDEA}, trace analysis, and unit testing to validate runtime behavior and resolve integration issues.}
+	\resumeItem{Worked}
+	{closely with \textbf{systems requirements, testing and architect engineers} to refine requirements, implement new features, and support integration and release activities across multiple vehicle projects.}
+	\resumeItem{Contributed}
+	{improvements to CI workflows supporting application-layer development, strengthening build automation and automated testing to shorten feedback cycles.}
 	\resumeItemListEnd
-	
-	\resumeSubheading
-	{Pentalog}{March 2020 -- April 2020}
-	{Junior Programmer}{Ia\c si, Ia\c si}
-	\resumeItemListStart
-	\resumeItem{The task that I was given was to create a virtual storage with no interface in Java. By storing the data in a text file I had to read it and operate all the CRUD operations. Skills that I have learned:}
-	\subitem{ - Code reviews with my mentor that helped to improve the readability and functionality of my code.}
-	\subitem{ - Discussions with my colleagues about the data structures ideal for this project and the implementation of it.}
-	\resumeItemListEnd
-	
 	\resumeSubHeadingListEnd
-	\vspace{-16pt}
 	
-	%-----------PROJECTS-----------
+	
+	%-----------PROJECTS-----------------
 	\section{Projects}
-	\vspace{-5pt}
 	\resumeSubHeadingListStart
-	\resumeProjectHeading
-	{\textbf{\href{https://github.com/GalbinitaSebastian97/MiniGPS}{Mini-GPS}} $|$ \emph{C++, Graphs, Shortest Path}}{September 2020}
-	\resumeItemListStart
-	\resumeItem{ The Mini-GPS application is based on Dijkstra's algorithm. The project illustrates a simple GPS model, displaying 3 different routes between the source and destination. The project produces an offline version of a GPS in which there are no real-time data on the current coordinates of the driver. }
-	\resumeItemListEnd
-	\vspace{-13pt}
-	\resumeProjectHeading
-	{\textbf{\href{https://github.com/GalbinitaSebastian97/API}{API}} $|$ \emph{Python, SQL}}{October 2021}
-	\resumeItemListStart
-	\resumeItem{The goal of this project was to create an API from scratch and exploring different techniques of implementing all the CRUD operations. The client can send requests to the server and if they are valid, send the resource that they want.}
-	\resumeItemListEnd 
-
+	\resumeSubItem{Application-Layer Feature Development - Body Electronics}
+	{Implemented and maintained embedded software features for exterior mirror and window lifter systems, covering normal operation, edge cases, diagnostics, and safety-related behavior; adapted solutions to multiple vehicle configurations and evolving OEM requirements while ensuring functional correctness and system stability.}
+	\resumeSubItem{Automated Quality KPI \& Metrics Platform}
+	{Designed and implemented an end-to-end automation framework to collect and visualize software quality indicators(code coverage, requirements coverage, memory usage, and complexity) improving visibility into software health and supporting data-driven engineering decisions.}
 	\resumeSubHeadingListEnd
-	\vspace{-15pt}
 	
+	%-----------PROJECTS-----------------
+	\section{Achievements and Responsibilities}
+	\resumeSubHeadingListStart
+	\resumeSubItem{}
+	{Provided application layer development and integration support across more then 10+ projects, ensuring consistent feature behavior and system stability.}
+	\resumeSubItem{}
+	{Maintained project software quality targets by monitoring and supporting quality KPIs consistently achieving more than 90\% target compliance.}
+	\resumeSubItem{}
+	{Supported system integration and release activities, resolving software behavior issues and improving reliability across vehicle configurations.}
+	\resumeSubItem{}
+	{Contributed to improving development workflows and software quality practices along side core development activities.}
+	\resumeSubHeadingListEnd
 	
 	%
-	%-----------PROGRAMMING SKILLS-----------
-	\section{Technical Skills}
-	\begin{itemize}[leftmargin=0.15in, label={}]
-		\small{\item{
-				\textbf{Languages}{: Python, HTML/CSS, MATLAB, C++11.} \\
-				\textbf{Developer Tools}{: VS Code, Atom, Postman, PostgreSQL, TeXstudio .} \\
-				\textbf{Development Environment}{: Linux, GitHub, Mac.} \\
-		}}
-	\end{itemize}
-	\vspace{-16pt}
-	
-	
-	%-----------INVOLVEMENT---------------
-	\section{Language}
+	%--------PROGRAMMING SKILLS------------
+	\section{Skills}
 	\resumeSubHeadingListStart
-	\resumeSubSubheading{English}{September 2021 -- Present}
-	\resumeItemListStart
-	\resumeItem{Cambridge C1 Advanced \href{https://github.com/GalbinitaSebastian97/CV-LaTeX-/blob/main/Acts/Cambridge/Cambridge.jpeg}{(Certificate in Advanced English)}.}
-	\resumeItemListEnd
-	\resumeSubSubheading{Romanian}{Present}
-	\resumeItemListStart
-	\resumeItem{Native Language.}
-	\resumeItemListEnd
+	\item{
+		\textbf{Embedded \& Application Layer Development}{:C, Embedded C, Python, Application Layer Software Development, Feature Logic Implementation, Safety-related Behavior Validation.}
+	}
+	\item{
+		\textbf{AUTOSAR \& Software Arhitecture}{: AUTOSAR Classic, ARXML configuration, Intern-component Communication, SWC Design.}
+	}
+	\item{
+	\textbf{Debugging}{: CANoe, CANalyzer, winIDEA, TraceAnalysis, Integration Testing}
+	}
+    \item{
+    \textbf{Arhitecture \& Software Design}{: Reusable Software Components, Parameterizable Libraries}
+	}
+	\item{
+		\textbf{Development \& CI/CD}{: Git, Jira, LaTeX,  Jenkins(CI pipelines, automation), Software Quality Metrics \& Analysis.}
+	}
 	\resumeSubHeadingListEnd
 	
-	\begin{center}
-	\tiny This CV was developed in TeXstudio using LaTeX. 
-	
-	\tiny For the code, check out my \href{https://github.com/GalbinitaSebastian97/CV-LaTeX-/blob/main/CV/CV.tex}{\underline{repo}} on github.
-	\end{center}
-	
+	%-----------EDUCATION-----------------
+	\section{Education}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Faculty of Mathematics, University of "Alexandru Ioan Cuza"}{Ia\c si}
+	{Mathematics and Informatics ;  Score:9.37}{Sep. 2018 -- Sep.2021}
+	\resumeSubHeadingListEnd
+	%-------------------------------------------
 \end{document}
